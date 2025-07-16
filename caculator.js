@@ -60,7 +60,14 @@ function displayEqual() {
         let result = eval(expression) ;
         let rounded = parseFloat(result.toFixed(9));
         document.getElementById("display").value = rounded;
+        addToHistory(expression + " = " + result);
     } catch (error) {
         document.getElementById("display").value = "Error";
     }
+}
+function addToHistory(entry) {
+    const historyDiv = document.getElementById("history");
+    const newEntry = document.createElement("div");
+    newEntry.textContent = entry;
+    historyDiv.appendChild(newEntry);
 }
