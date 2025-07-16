@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="caculator.css">
+<script src="caculator.js"></script>
+</head>
+<body>
+<h1>Hand-up Calculator</h1>
+<audio autoplay loop>
+      <source src="theme.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.      
+</audio>
+<div>
+    <input type="text" id="display" value="" > 
+</div>
+
+<table border="1">
+    <tr>
+        <th></th>
+        <th></th>
+        <th><button onclick="deleteMono()"> AC</button></th>
+        <th><button onclick="deleteAll()"> DEL</button></th>
+  <tr>
+        <td><button type="button" onclick="display1()"> 1</button></td>
+        <td><button type="button" onclick="display2()"> 2</button></td>
+        <td><button type="button" onclick="display3()"> 3</button></td>
+        <td><button type="button" onclick="displayPlus()"> +</button></td>
+  </tr>
+   <tr>
+        <td><button type="button" onclick="display4()"> 4</button></td>
+        <td><button type="button" onclick="display5()"> 5</button></td>
+        <td><button type="button" onclick="display6()"> 6</button></td>
+        <td><button type="button" onclick="displaySub()"> -</button></td>
+  </tr>
+   <tr>
+        <td><button type="button" onclick="display7()"> 7</button></td>
+        <td><button type="button" onclick="display8()"> 8</button></td>
+        <td><button type="button" onclick="display9()"> 9</button></td>
+        <td><button type="button" onclick="displayMulti()"> x</button></td>
+  </tr>
+  <tr>
+        <td><button type="button" onclick="display0()"> 0</button></td>
+        <td><button type="button" onclick="displayDot()"> .</button></td>
+        <td><button type="button" onclick="displayEqual()"> =</button></td>
+        <td><button type="button" onclick="displayDivision()"> /</button></td>
+  </tr>
+</table>
+
+</body>
+</html>
